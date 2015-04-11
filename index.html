@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Donnuts</title>
-	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	    <script src="js/d3.js" charset="utf-8"></script>	        
-    	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-    	<script src = "js/index.js"></script>
-    	  <link rel="stylesheet" href="index.css">
-	</head>
-	<body>
-		<div id = "graficos">
+<head>
+<title>Donnuts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="js/d3.js" charset="utf-8"></script>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/index.js"></script>
+<link rel="stylesheet" href="index.css">
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class = "cabecalho" id="infortitulo">
+		<div class = "infor" id="inforUni">
+			<div class = "integ">
+			<div>
+				<strong>Universidade Federal de Minas Gerais</strong>
+			</div>
+			<div>
+				<strong>Departamento de Ciencia da Computação</strong>
+			</div>
+			<div>
+				<strong>Trabalho Pratico de Visualização de dados</strong>
+			</div>
 		</div>
-	</body>
+		</div>
+
+		<div class ="separador" id = "separador"></div>
+
+		<div class = "nomes" id="inforAluno">
+			<div class="muted">
+				<div class = "integ">
+				Nome: Guilherme Henrique Rodrigues <br> Mauri Miguel
+			</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id=visalizacao>
+		<div class = "grafico" id="grafico">
+
+		</div>
+
+		<div id=botoes>
+			<ul class="pager">
+				<li><a href="#">Anterior</a></li>
+				<li><a href="#">Próximo</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
 </html>

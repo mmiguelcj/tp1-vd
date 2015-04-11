@@ -1,0 +1,49 @@
+.infor {
+height: 70px;
+max-width: 1250px;
+min-width: 1024px;
+border-radius: 10px;
+position:relative;
+top: 10px;
+	left: 10px;
+	right: 10px;
+	background-color: #f4fcff;
+}
+
+
+.grafico{
+	height: 390px;
+	width: 1250px;
+	position:relative;
+	left: 20px;
+	right: 100px;
+	top: 50px;
+	
+}
+
+.separador{
+
+	height: 20px;
+	max-width: 2400px;
+	position:relative;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+}
+
+.nomes{
+height: 50px;
+max-width: 1250px;
+min-width: 1024px;
+border-radius: 10px;
+position:relative;
+	left: 10px;
+	right: 10px;
+	background-color: #f4fcff
+}
+
+.integ{
+position:relative;
+left: 10px;
+
+}
