@@ -1,17 +1,53 @@
+html, body {
+	width: 2000px;
+	height: 1250px;
+}
+
+/*CSS DO hoover*/
+
+#grafico {
+	height: 80%;
+	position: relative;
+	width: 70%;
+}
+
+
+.tooltip {
+	background: #eee;
+	box-shadow: 0 0 5px #999999;
+	color: #333;
+	display: none;
+	font-size: 12px;
+	left: 130px;
+	padding: 10px;
+	position: absolute;
+	text-align: center;
+	top: 95px;
+	width: 80px;
+	z-index: 10;
+	opacity: 100;
+}
+
+#rect {
+	stroke-width: 2px;
+}
+
+
+
 .infor {
-height: 70px;
-max-width: 1250px;
-min-width: 1024px;
-border-radius: 10px;
-position:relative;
-top: 10px;
+	height: 70px;
+	max-width: 1250px;
+	min-width: 1024px;
+	border-radius: 10px;
+	position:relative;
+	top: 10px;
 	left: 10px;
 	right: 10px;
 	background-color: #f4fcff;
 }
 
 
-.grafico{
+.graficoOld{
 	height: 390px;
 	width: 1250px;
 	position:relative;
@@ -32,18 +68,39 @@ top: 10px;
 }
 
 .nomes{
-height: 50px;
-max-width: 1250px;
-min-width: 1024px;
-border-radius: 10px;
-position:relative;
+	height: 50px;
+	max-width: 1250px;
+	min-width: 1024px;
+	border-radius: 10px;
+	position:relative;
 	left: 10px;
 	right: 10px;
 	background-color: #f4fcff
 }
 
 .integ{
-position:relative;
-left: 10px;
+	position:relative;
+	left: 10px;
+}
+
+.control{
+	height: 390px;
+	width: 1250px;
+	position:relative;
+	left: 20px;
+	right: 100px;
+	top: 50px;
+}
+
+#separador2{
+	height: 100px;
+	width: 1250px;
+	position:relative;
+}
+
+.bot{
+	position:center;
 
 }
+
+
