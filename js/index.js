@@ -25,7 +25,12 @@ function desenhaGrafo(dadosGrafo){
           .attr('width', width)		
           .attr('height', height)		
           .append('g')		
-          .attr('transform', 'translate(' + (width / 2) + ',' + (height / 2) + ')');		
+          .attr('transform', 'translate(' + (width / 2) + ',' + (height / 2) + ')');
+
+        /*Basta adicionar a legenda aqui.*/
+        svg.append("text")
+            .style("text-anchor", "middle")
+            .text("G");		
 
         var arc = d3.svg.arc()		
           .innerRadius(radius-donutWidth)		
@@ -33,7 +38,9 @@ function desenhaGrafo(dadosGrafo){
           		
         var pie = d3.layout.pie()
           .value(function(d) { return d.count; })		
-          .sort(null);		
+          .sort(null);
+
+          d3.select
 
       	/*Hoover*/
       	//Tentando o hoover de novo.
@@ -57,7 +64,9 @@ function desenhaGrafo(dadosGrafo){
           .attr('d', arc)		
           .attr('fill', function(d, i) { 		
             return color(d.data.label);		
-		});			
+		});
+
+       
 
 		path.on('mouseover', function(d) {                            // NEW
             var total = d3.sum(dadosPessoa.map(function(d) {                // NEW
